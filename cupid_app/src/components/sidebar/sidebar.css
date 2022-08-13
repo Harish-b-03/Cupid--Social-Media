@@ -1,5 +1,6 @@
 .SidebarContainer{
     padding: 20px;
+    border-right: 1px solid lightgrey;
 }
 
 .sidebarLinks{
@@ -37,4 +38,13 @@
     margin-right: 12px;
     margin-top: 2px;
     /* background-color: blue; */
+}
+
+.followers{
+    padding: 20px 0;
+}
+
+.followersList{
+    list-style: none;
+    /* background-color: aquamarine; */
 }

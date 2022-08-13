@@ -2,7 +2,7 @@
     display:flex;
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: aqua;
+    /* background-color: aqua; */
     overflow-x: hidden;
 }
 
@@ -19,5 +19,5 @@
 
 .Rightbar{
     flex:3;
-    background-color: blue;
+    /* background-color: blue; */
 }
