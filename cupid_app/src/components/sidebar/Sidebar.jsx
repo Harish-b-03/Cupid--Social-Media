@@ -1,7 +1,7 @@
 import "./sidebar.css"
 import {RssFeed, ChatOutlined, PlayCircleOutlineOutlined, Group, HelpOutline, School, Today, WorkOutlineOutlined, BookmarkBorderOutlined} from "@material-ui/icons"
 import {Users} from "../../dummyData";
-import Online from "../online/Online";
+import User from "../user/User";
 
 function Sidebar() {
   return (
@@ -49,8 +49,11 @@ function Sidebar() {
 
       <div className="followers">
         <ul className="followersList">
+
           {Users.map((user)=>(
-            <Online key={user.id} user={user}/>
+            <li className="followerListItem">
+              <User key={user.id} user={user}/>
+            </li>
           ))}
         </ul>
       </div>

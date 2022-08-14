@@ -1,12 +1,15 @@
 .SidebarContainer{
+    position: sticky;
+    top: 0px;
     padding: 20px;
+    /* background-color: aqua; */
     border-right: 1px solid lightgrey;
 }
 
 .sidebarLinks{
     padding: 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(187, 187, 187);
     /* background-color: blue; */
 }
 
@@ -47,4 +50,10 @@
 .followersList{
     list-style: none;
     /* background-color: aquamarine; */
+}
+
+.followerListItem{
+    margin: 4px 0;
+    padding: 4px 0;
+    /* background-color: aqua; */
 }
