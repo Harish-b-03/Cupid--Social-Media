@@ -2,7 +2,7 @@ import "./post.css"
 import {Users} from "../../dummyData"
 import User from "../user/User"
 import {Favorite, FavoriteBorderOutlined, MoreHorizOutlined} from "@material-ui/icons"
-import {useState, useEffect} from "react"
+import {React, useState, useEffect} from "react"
 
 function Post({post}) {
     const user = Users.filter((u)=>u.id===post.userId)[0]; // to get the user who posted.

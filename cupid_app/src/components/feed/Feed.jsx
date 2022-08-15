@@ -1,3 +1,4 @@
+import React from "react"
 import "./feed.css"
 import {Posts} from "../../dummyData"
 import Post from "../post/Post"

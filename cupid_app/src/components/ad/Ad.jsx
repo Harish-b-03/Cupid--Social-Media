@@ -1,3 +1,4 @@
+import React from "react"
 import "./ad.css"
 
 function Ad() {
