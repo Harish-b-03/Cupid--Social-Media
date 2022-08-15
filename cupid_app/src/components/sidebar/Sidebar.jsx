@@ -1,7 +1,6 @@
 import "./sidebar.css"
 import {RssFeed, ChatOutlined, PlayCircleOutlineOutlined, Group, HelpOutline, School, Today, WorkOutlineOutlined, BookmarkBorderOutlined} from "@material-ui/icons"
-import {Users} from "../../dummyData";
-import User from "../user/User";
+import Ad from "../ad/Ad" 
 
 function Sidebar() {
   return (
@@ -47,7 +46,8 @@ function Sidebar() {
         </ul>
       </div>
 
-      <div className="followers">
+      <Ad/>
+      {/* <div className="followers">
         <ul className="followersList">
 
           {Users.map((user)=>(
@@ -56,7 +56,7 @@ function Sidebar() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
     </div>
   )
