@@ -12,7 +12,7 @@ function Rightbar() {
         <ul className="followersList">
 
           {Users.map((user)=>(
-            <li className="followerListItem">
+            <li className="followerListItem" key={user.id}>
               <User key={user.id} user={user}/>
             </li>
           ))}

@@ -87,3 +87,31 @@
     border: 2px solid white;
     cursor: pointer;
 }
+
+.mobileMenu{
+    display: none;
+}
+
+.menuButton{
+    transform: scale(1.15);
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .topbarLeft{
+        flex: 10;
+    }
+    .topbarCenter{
+        display: none;
+    }
+    .topbarRightContainer{
+        display: none;
+    }
+    .mobileMenu{
+        display: flex;
+        flex: 2;
+        justify-content: end;
+    }
+}

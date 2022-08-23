@@ -25,6 +25,7 @@
 
 .moreButton{
     margin: 0 30px;
+    cursor: pointer;
 }
 
 .post{
@@ -116,4 +117,21 @@
     /* font-weight: 500; */
     font-size: 15px;
     color: gray;
+}
+
+.LikeWord{
+    margin: 0 5px;
+    display: inline;
+}
+
+@media screen and (max-width: 992px) {
+    .postContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .LikeWord{
+        display: none;
+    }
 }

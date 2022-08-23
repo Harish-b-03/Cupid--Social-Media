@@ -2,9 +2,9 @@ import "./post.css"
 import {Users} from "../../dummyData"
 import User from "../user/User"
 import {Favorite, FavoriteBorderOutlined, MoreHorizOutlined} from "@material-ui/icons"
-import {React, useState, useEffect} from "react"
+import React, {useState, useEffect} from "react"
 
-function Post({post}) {
+const Post = ({post}) => {
     const user = Users.filter((u)=>u.id===post.userId)[0]; // to get the user who posted.
     const [likes, setlikes] = useState(post.like)
     const [liked, setliked] = useState(false);
@@ -46,7 +46,7 @@ function Post({post}) {
             <div className="postButton">
                 {/* <img src="assets/heart.png" alt="Like" className="likeButton" /> */}
                 {(liked)?<Favorite className="likeButton" onClick={updateLike}/>:<FavoriteBorderOutlined className="likeButton" onClick={updateLike}/>}
-                <p className="likes">{`${likes} Likes`}</p>
+                <p className="likes">{likes}<span className="LikeWord">Likes</span> </p>
             </div>
             <div className="postComment">
                 <p className="comments">{`${post.comment} Comments`}</p>

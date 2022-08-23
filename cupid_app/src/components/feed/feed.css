@@ -12,3 +12,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 992px) {
+    .feedContainer {
+      padding: 15px;
+    }
+}

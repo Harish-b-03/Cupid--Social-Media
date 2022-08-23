@@ -1,6 +1,6 @@
 import React from "react"
 import "./topbar.css"
-import {Search, Notifications, Chat, Person} from "@material-ui/icons"
+import {Search, Notifications, Chat, Person, Menu} from "@material-ui/icons"
 
 function Topbar() {
   return (
@@ -25,6 +25,9 @@ function Topbar() {
             <Notifications className="topbarIcons"/>
             <Chat className="topbarIcons"/>
             <Person className="topbarIcons profile"/>
+          </div>
+          <div className="mobileMenu">
+            <Menu className="menuButton"/>
           </div>
         </div>
     </div>
