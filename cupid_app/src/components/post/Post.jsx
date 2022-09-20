@@ -3,12 +3,14 @@ import {Users} from "../../dummyData"
 import User from "../user/User"
 import {Favorite, FavoriteBorderOutlined, MoreHorizOutlined} from "@material-ui/icons"
 import React, {useState, useEffect} from "react"
+import Comment from "../comment/Comment"
 
 const Post = ({post}) => {
     const user = Users.filter((u)=>u.id===post.userId)[0]; // to get the user who posted.
     const [likes, setlikes] = useState(post.like)
     const [liked, setliked] = useState(false);
     const [animate, setanimate] = useState(false);
+    const [ShowComments, setShowComments] = useState(false);
 
     const updateLike = () => {
         if(liked){
@@ -49,10 +51,17 @@ const Post = ({post}) => {
                 <p className="likes">{likes}<span className="LikeWord">Likes</span> </p>
             </div>
             <div className="postComment">
-                <p className="comments">{`${post.comment} Comments`}</p>
+                <p className="comments"><span onClick={()=>{if(post.comment >0) setShowComments(!ShowComments)}}>{`${post.comment} Comments`}</span></p>
                 <p className="timestamp">{post.date}</p>
             </div>
         </div>
+        { ShowComments && <div className="CommentsContainer">
+            {
+            (post.comment > 0)? 
+            post.comments.map((commentData)=>(<Comment key={commentData.commentId} commentData={commentData}/>))
+            :<></>
+            }
+        </div>}
     </div>
   )
 }

@@ -59,7 +59,16 @@ export const Posts = [
     date: "5 mins ago",
     userId: 1,
     like: 32,
-    comment: 9,
+    comment: 1,
+    comments: [
+      {
+        commentId: 1,
+        userId: 2,
+        body: "Superrr:)) aosnaiscndasi nvdindvoasi nviasn d v iuasn vdoisod saoinoi snvodisn cokaxocai v now i enocmxslk coiwnv dosinaksmo kvdnoai sndoindamd oascoians",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
   {
     id: 2,
@@ -68,6 +77,15 @@ export const Posts = [
     userId: 2,
     like: 2,
     comment: 1,
+    comments: [
+      {
+        commentId: 1,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
   {
     id: 3,
@@ -77,6 +95,22 @@ export const Posts = [
     userId: 3,
     like: 61,
     comment: 2,
+    comments: [
+      {
+        commentId: 1,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 2,
+        userId: 5,
+        body: "Heyy bro, wassup",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
   {
     id: 4,
@@ -84,7 +118,8 @@ export const Posts = [
     date: "4 hours ago",
     userId: 4,
     like: 7,
-    comment: 3,
+    comment: 0,
+    comments: [],
   },
   {
     id: 5,
@@ -92,7 +127,8 @@ export const Posts = [
     date: "5 hours ago",
     userId: 5,
     like: 23,
-    comment: 5,
+    comment: 0,
+    comments: [],
   },
   {
     id: 6,
@@ -100,7 +136,8 @@ export const Posts = [
     date: "1 day ago",
     userId: 6,
     like: 44,
-    comment: 6,
+    comment: 0,
+    comments: [],
   },
   {
     id: 7,
@@ -109,7 +146,16 @@ export const Posts = [
     date: "2 days ago",
     userId: 7,
     like: 52,
-    comment: 3,
+    comment: 1,
+    comments: [
+      {
+        commentId: 1,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
   {
     id: 8,
@@ -117,7 +163,23 @@ export const Posts = [
     date: "3 days ago",
     userId: 8,
     like: 15,
-    comment: 1,
+    comment: 2,
+    comments: [
+      {
+        commentId: 1,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 2,
+        userId: 7,
+        body: "Awesome Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
   {
     id: 9,
@@ -127,6 +189,22 @@ export const Posts = [
     userId: 9,
     like: 11,
     comment: 2,
+    comments: [
+      {
+        commentId: 1,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 2,
+        userId: 7,
+        body: "Awesome Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
   {
     id: 10,
@@ -134,6 +212,50 @@ export const Posts = [
     date: "1 week ago",
     userId: 10,
     like: 104,
-    comment: 12,
+    comment: 6,
+    comments: [
+      {
+        commentId: 1,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 2,
+        userId: 7,
+        body: "Awesome Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 3,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 4,
+        userId: 7,
+        body: "Awesome Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 5,
+        userId: 1,
+        body: "Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+      {
+        commentId: 6,
+        userId: 7,
+        body: "Awesome Awesome;)",
+        timeStamp: ["2022", "09", "20", "13", "01", "32", "09"], // timestamp [year, month, day, hours, mins, secs, milliseconds]
+        recomments: [],
+      },
+    ],
   },
 ];

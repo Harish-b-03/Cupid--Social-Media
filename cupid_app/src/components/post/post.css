@@ -1,7 +1,6 @@
 .postContainer{
     width: 80%;
     padding: 5px 0;
-    /* border: 1px solid gray; */
     box-shadow: 0 0 16px -8px rgba(0,0,0,0.68);
     -webkit-box-shadow: 0 0 16px -8px rgba(0,0,0,0.68);
     border-radius: 20px;
@@ -18,7 +17,6 @@
     align-items: center;
     width: 100%;
     border-bottom: 1px solid lightgrey;
-    /* background-color: aqua; */
     height: 50px;
     margin-bottom: 10px;
 }
@@ -134,4 +132,11 @@
     .LikeWord{
         display: none;
     }
+}
+
+.CommentsContainer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-top: 1px solid lightgrey;
 }
