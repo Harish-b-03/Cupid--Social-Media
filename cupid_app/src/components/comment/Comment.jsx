@@ -14,7 +14,7 @@ function Comment({commentData}) {
         <div className="commentContainerLeft">
             <div className="commentUserProfile">
                 <img src={commentUser.profilePicture} alt="profilePhoto" className="commentUserImage" />
-                <div className="onlineBadge"></div>
+                <div className="commentOnlineBadge"></div>
             </div>
         </div>
         <div className="commentContainerRight">
