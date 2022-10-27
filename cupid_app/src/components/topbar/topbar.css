@@ -65,12 +65,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: bisque; */
 }
 
 .topbarRightContainer{
     width: 60%;
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;

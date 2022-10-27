@@ -1,5 +1,4 @@
 .commentContainer{
-    /* background-color: aqua; */
     width: 100%;
     box-sizing: border-box;
     margin: 5px 0;
@@ -17,7 +16,6 @@
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    background-color: aqua;
 }
 
 .commentOnlineBadge{
@@ -58,6 +56,5 @@
         max-width: 400px;
         background-color: black;
     }
-    /* background-color: blue; */
 }
 
