@@ -1,8 +1,9 @@
 import React from "react"
+// import { useNavigate } from "react-router-dom"
 import "./topbar.css"
-import {Search, Notifications, Chat, Person, Menu} from "@material-ui/icons"
+import {Search, Notifications, Chat, Menu} from "@material-ui/icons"
 
-function Topbar() {
+function Topbar({currentUser, showProfile, setshowProfile}) {
   return (
     <div className="topbarContainer">
         <div className="topbarLeft">
@@ -24,7 +25,7 @@ function Topbar() {
           <div className="topbarRightContainer">
             <Notifications className="topbarIcons"/>
             <Chat className="topbarIcons"/>
-            <Person className="topbarIcons profile"/>
+            <img src={currentUser.profilePicture} alt={currentUser.username} className="topbarIcons profile" title={currentUser.username} onClick={()=>{setshowProfile(!showProfile)}}/>
           </div>
           <div className="mobileMenu">
             <Menu className="menuButton"/>

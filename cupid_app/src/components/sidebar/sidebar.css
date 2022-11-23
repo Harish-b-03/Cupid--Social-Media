@@ -9,7 +9,6 @@
     padding: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(187, 187, 187);
-    margin-bottom: 20px;
     /* background-color: blue; */
 }
 
@@ -41,4 +40,23 @@
     margin-right: 12px;
     margin-top: 2px;
     /* background-color: blue; */
+}
+
+
+.sidebarfollowers{
+    padding: 20px 0;
+    width: 100%;
+}
+
+.sidebarfollowersList{
+    list-style: none;
+    width: 90%;
+    /* background-color: aquamarine; */
+}
+
+.followerListItem{
+    margin: 4px 0;
+    padding: 4px 0;
+    width: 100%;
+    /* background-color: aqua; */
 }

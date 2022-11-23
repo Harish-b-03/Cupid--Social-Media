@@ -1,9 +1,9 @@
 import React from "react"
 import "./feed.css"
-import {Posts} from "../../dummyData"
 import Post from "../post/Post"
-
-function Feed() {
+// import { Users } from "../../dummyData"
+// import { Posts } from "../../dummyData"
+function Feed({ currentUser, Users, Posts }) {
   return (
     <div className="feedContainer">
       <div className="uploadPost">
@@ -11,7 +11,7 @@ function Feed() {
       </div>
 
       <div className="feedPosts">
-        {Posts.map((post) => (<Post key={post.id} post={post}/>))}
+        {Posts.map((post) => (<Post key={post.postId} currentUser={currentUser} post={post} Users={Users} />))}
       </div>
     </div>
   )
